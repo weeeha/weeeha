@@ -1,6 +1,6 @@
 # Nick Vyhouski
 
-**Senior product designer who ships production code.** 14+ years designing complex B2B software — AI products, data-heavy dashboards, and design systems as production infrastructure.
+**Product designer who ships production code — and builds the systems other designers ship with.** 14+ years across complex B2B software: AI products, data-heavy dashboards, design systems as production infrastructure.
 
 [vyhouski.com](https://vyhouski.com) · [LinkedIn](https://linkedin.com/in/nick-vyhouski) · mvyhouski@gmail.com · Montreal 🇨🇦
 
