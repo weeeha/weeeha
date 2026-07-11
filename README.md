@@ -36,4 +36,3 @@ Designing for AI-native surfaces by building them.
 ---
 
 *Before this: Sprig (Platform & AI), Pendo, InRule, founding designer at Acies.ai, co-founder of MeetnGreetMe (World Summit Award, 2016). 21 case studies at [vyhouski.com/work](https://vyhouski.com/work).*
-
