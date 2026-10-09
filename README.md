@@ -6,22 +6,42 @@
 
 **Now:**
 
-- **Pegbo** - Design system and product UI for a pre-construction CRM. 111 components on a three-tier token architecture (shadcn/Radix/Base UI primitives, Pegbo composites, a 22-component AI tier), the prototyping repo the team explores screen directions in, and a bid-coverage workspace that shows package risk on the 3D building model, so a package short of bidders lights up where it sits.
+- **[Pegbo](https://pegbo.com)** - Design system and product UI for a pre-construction CRM. 123 components on a three-tier token architecture (shadcn/Radix/Base UI primitives, Pegbo composites, a 23-component AI tier), the prototyping repo the team explores screen directions in, and a bid-coverage workspace that shows package risk on the 3D building model, so a package short of bidders lights up where it sits.
 - **[Ten8](https://ten8.ai)** - Founding Designer. AI coworker orchestration for logistics. Shipped the production design system: 112 components across 17 surfaces on a 271-token semantic system ([Storybook](https://ten8-component-library.vercel.app)), with Storybook running as an MCP server so AI tooling generates on-system.
 - **[PermitNav](https://permitnav.ca)** - Senior Product Designer (AI & design systems). AI building-permit copilot for Metro Vancouver. Design specs, prototypes and production UI, all shipped through an agentic Claude Code workflow against the product repos.
 
 ### Design systems that enforce their own rules
 
-The Pegbo library above, a 95-component personal library, and a governance kit, built on one idea: a rule that matters is a check that runs.
+One idea across four systems: a rule that matters is a check that runs, and an agent working in the repo hits the same checks a person does.
 
-- **Contrast is a unit test.** Every status foreground is measured against the fill it actually sits on, and the build fails below 4.5:1.
-- **Every component ships a machine-readable contract.** When to use it, what to reach for instead, and its keyboard behaviour, with one index routing over all 111. Give an agent that and it picks the right component instead of inventing props.
-- **Governance as a conformance ladder.** Ten staged specs, three built so far, each built stage paired with a probe that runs against a target repo. A rule and its detector are one record, so they cannot drift apart, and a check that could not run is reported separately from one that failed.
-- **Gates on the ordinary things.** Axe on every story in light and dark, because the worst contrast in the system was a dark-mode value a light-only run never sees. Spacing, radius and type scales checked in CI. A post-edit hook that hands an agent the token violations on the lines it just changed.
+- **Pegbo** - the production library above. 123 contracted components, 6 themes × 2 finishes × light and dark, 7 CI workflows.
+- **[Super-AI-Components](https://github.com/VV-DSGN-INC/Super-AI-Components)** - open-source shadcn registry for AI applications. 137 items installable by URL, MIT licensed ([site](https://super-ai-components.vercel.app)).
+- **ds-harness** - Pegbo's conventions with the brand removed: 75 components and the full gate set, so the rules can seed the next system.
+- **ds-architecture** - governance as a conformance ladder. Ten stages, three built, each claim paired with a probe that runs against a target repo, so a rule and its detector cannot drift apart. My personal 99-component library adopted the token stage first, which asks that every token be read somewhere or deleted: 337 tokens became 327.
 
-Also in the set: a governed corpus of iOS competitive audits that fails its own build when a claim drifts from the screenshot it cites, and a runnable app shell where how you browse and how records open are two independent, persisted choices. Private repos, happy to walk through any of it.
+What runs in them:
 
-### AI-enabled design workflows
+- **Contrast is a unit test.** Every status foreground is measured against the fill it actually sits on, per theme, in light and dark, and the build fails below 4.5:1. The worst pair in the system was a dark-mode value a light-only check never sees.
+- **Every component ships a machine-readable contract.** When to use it, what to reach for instead, its keyboard behaviour, with one index routing over all 123. Give an agent that and it picks the right component instead of inventing props. The same contracts now also emit a catalog for generative UI.
+- **Rules state their own coverage.** 50 spec rules, and a coverage file that marks which have checks and which 22 stay judgment calls, so "covered" always has a denominator.
+- **Review is a CI stage.** An AI reviewer reads every PR with a test-change report and two blocker classes. An intake agent turns new issues into plan comments before work starts.
+- **Gates on the ordinary things.** Axe on every story, spacing, radius and type scales, keyboard stops on disabled controls, layout checks at 1024 and 1280, and a weekly WebKit run for Safari. A post-edit hook hands an agent the token violations on the lines it just changed.
+- **Prototypes get a fast lane.** A sandbox outside the gates for trying screen directions, and a promote step that runs a prototype through every gate before it graduates.
+
+Also in the set: a governed corpus of iOS competitive audits that fails its own build when a claim drifts from the screenshot it cites, and a runnable app shell where how you browse and how records open are two independent, persisted choices. Pegbo, ds-harness and ds-architecture are private repos, happy to walk through any of it.
+
+### Connected devices
+
+Designing for screens that aren't a laptop, and keeping a fleet of them running.
+
+- **[SuperClock](https://github.com/weeeha/SuperClock)** - a design system for a display that isn't a rectangle. 14 mini-apps on a 1080×1080 circular LCD, running as a four-device Raspberry Pi fleet over Tailscale, with an in-repo docs site and a written platform spec so new apps land on-system. This summer: a calendar built as a four-level zoom ladder (cover, week, month, year) with swipe navigation, and a radar sidecar so the display responds to presence
+- **[tailtop](https://github.com/weeeha/tailtop)** - *htop for your tailnet.* A terminal UI that reads the `tailscaled` daemon already running on your machine. Installs nothing, needs no root
+- **fleetview** (private) - the visual companion to tailtop: a health view for the eight single-board computers running clocks, e-ink dashboards and a plant monitor around the apartment. It separates a board that is reachable from one that is actually doing its job, because three sat offline for 15 to 98 days before anyone noticed
+- **[3D-Printing](https://github.com/weeeha/3D-Printing)** - parametric enclosures for SuperClock and other hardware, printed on a Bambu Lab P1S. FreeCAD and OpenSCAD for parts that have to fit, Blender for sculpture
+
+### Exploration and pet projects
+
+#### AI-enabled design workflows
 
 Tools that change how design teams work, not just what they ship.
 
@@ -31,7 +51,7 @@ Tools that change how design teams work, not just what they ship.
 - Design-adjacent automations built around a real token migration: two-way Figma-variables ↔ code-tokens sync, token-table generation, automated rebinding of Figma node trees between token systems
 - Run a ~15-designer community with biweekly sessions on AI tooling and best practices
 
-### Agent-driven experiences
+#### Agent-driven experiences
 
 Designing for AI-native surfaces by building them.
 
@@ -42,13 +62,11 @@ Designing for AI-native surfaces by building them.
 - **[VisionClaw](https://github.com/weeeha/VisionClaw)** - real-time AI assistant for Meta Ray-Ban smart glasses: voice + vision, Gemini Live
 - **[MyMuseumGuide](https://github.com/weeeha/MyMuseumGuide)** - point a phone at an artifact and get it identified, narrated, and read aloud. Vision to streamed narrative to speech, with per-museum theming and a guided tour flow
 
-### Film, and other craft
+#### Film
 
 - **[FilmMaker](https://github.com/weeeha/FilmMaker)** - paste a screenplay, get scenes and shots, and a generated reference image per shot, with style notes that propagate across the board. The storyboard loop is built; the wider studio (flow builder, music and voice libraries, cost visible per step) is specced
 - **[Film Design System](https://github.com/weeeha/Image-Generation-Pipeline-)** - a local-first app that manages a film's visual world the way a design system manages a product UI. Characters, props and settings each own a canon of reference images; good outputs get promoted back into it, so a character looks like the same character across hundreds of generations
 - **[Video-Generation-Pipeline](https://github.com/weeeha/Video-Generation-Pipeline)** - Seedance 2.5 client with reference packs that hold a person, a place or a motion steady across separate generations, plus the prompt and API knowledge that makes a first attempt land. Grown out of a brand-film pipeline that shipped
-- **[SuperClock](https://github.com/weeeha/SuperClock)** - a design system for a display that isn't a rectangle. 14 mini-apps on a 1080×1080 circular LCD, running as a four-device Raspberry Pi fleet over Tailscale, with an in-repo docs site and a written platform spec so new apps land on-system. This summer: a calendar built as a four-level zoom ladder (cover, week, month, year) with swipe navigation, and a radar sidecar so the display responds to presence
-- **[tailtop](https://github.com/weeeha/tailtop)** - *htop for your tailnet.* A terminal UI that reads the `tailscaled` daemon already running on your machine. Installs nothing, needs no root
 
 ---
 
