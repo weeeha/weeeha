@@ -14,9 +14,9 @@
 
 One idea across four systems: a rule that matters is a check that runs, and an agent working in the repo hits the same checks a person does.
 
-- **Pegbo** - the production library above. 123 contracted components, 6 themes × 2 finishes × light and dark, 7 CI workflows.
+- **The production library above** - 123 contracted components, 6 themes × 2 finishes × light and dark, 7 CI workflows.
 - **[Super-AI-Components](https://github.com/VV-DSGN-INC/Super-AI-Components)** - open-source shadcn registry for AI applications. 137 items installable by URL, MIT licensed ([site](https://super-ai-components.vercel.app)).
-- **ds-harness** - Pegbo's conventions with the brand removed: 75 components and the full gate set, so the rules can seed the next system.
+- **ds-harness** - the production library's conventions with the brand removed: 75 components and the full gate set, so the rules can seed the next system.
 - **ds-architecture** - governance as a conformance ladder. Ten stages, three built, each claim paired with a probe that runs against a target repo, so a rule and its detector cannot drift apart. My personal 99-component library adopted the token stage first, which asks that every token be read somewhere or deleted: 337 tokens became 327.
 
 What runs in them:
@@ -28,7 +28,7 @@ What runs in them:
 - **Gates on the ordinary things.** Axe on every story, spacing, radius and type scales, keyboard stops on disabled controls, layout checks at 1024 and 1280, and a weekly WebKit run for Safari. A post-edit hook hands an agent the token violations on the lines it just changed.
 - **Prototypes get a fast lane.** A sandbox outside the gates for trying screen directions, and a promote step that runs a prototype through every gate before it graduates.
 
-Also in the set: a governed corpus of iOS competitive audits that fails its own build when a claim drifts from the screenshot it cites, and a runnable app shell where how you browse and how records open are two independent, persisted choices. Pegbo, ds-harness and ds-architecture are private repos, happy to walk through any of it.
+Also in the set: a governed corpus of iOS competitive audits that fails its own build when a claim drifts from the screenshot it cites, and a runnable app shell where how you browse and how records open are two independent, persisted choices. The production library, ds-harness and ds-architecture are private repos, happy to walk through any of it.
 
 ### Connected devices
 
