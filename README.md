@@ -59,13 +59,12 @@ Designing for AI-native surfaces by building them.
 - **[agent-rpg](https://github.com/weeeha/agent-rpg)** - the same agent-squad problem, explored as a cyberpunk command HQ ([demo](https://agent-rpg.vercel.app))
 - **[AI-Orb](https://github.com/weeeha/AI-Orb)** - audio-reactive orb for AI voice interfaces: the visual presence of an agent that is idle, listening, thinking or speaking. One WebGL fragment program, five finishes, zero runtime dependencies, with a written style guide for the orb as a design language
 - **[lifeos-specs](https://github.com/weeeha/lifeos-specs)** - specs for LifeOS, a personal operating system: declarative flows with a completion gate, one sanctioned write path for state, and a local vector index plus knowledge graph as memory. Native iOS client on top, engine local-first with no metered API for the heavy lifting
-- **[VisionClaw](https://github.com/weeeha/VisionClaw)** - real-time AI assistant for Meta Ray-Ban smart glasses: voice + vision, Gemini Live
 - **[MyMuseumGuide](https://github.com/weeeha/MyMuseumGuide)** - point a phone at an artifact and get it identified, narrated, and read aloud. Vision to streamed narrative to speech, with per-museum theming and a guided tour flow
 
 #### Film
 
 - **[FilmMaker](https://github.com/weeeha/FilmMaker)** - paste a screenplay, get scenes and shots, and a generated reference image per shot, with style notes that propagate across the board. The storyboard loop is built; the wider studio (flow builder, music and voice libraries, cost visible per step) is specced
-- **[Film Design System](https://github.com/weeeha/Image-Generation-Pipeline-)** - a local-first app that manages a film's visual world the way a design system manages a product UI. Characters, props and settings each own a canon of reference images; good outputs get promoted back into it, so a character looks like the same character across hundreds of generations
+- **[Film Design System](https://github.com/weeeha/Film-Design-System)** - a local-first app that manages a film's visual world the way a design system manages a product UI. Characters, props and settings each own a canon of reference images; good outputs get promoted back into it, so a character looks like the same character across hundreds of generations
 - **[Video-Generation-Pipeline](https://github.com/weeeha/Video-Generation-Pipeline)** - Seedance 2.5 client with reference packs that hold a person, a place or a motion steady across separate generations, plus the prompt and API knowledge that makes a first attempt land. Grown out of a brand-film pipeline that shipped
 
 ---
