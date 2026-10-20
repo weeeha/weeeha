@@ -59,7 +59,6 @@ Designing for AI-native surfaces by building them.
 - **[agent-rpg](https://github.com/weeeha/agent-rpg)** - the same agent-squad problem, explored as a cyberpunk command HQ ([demo](https://agent-rpg.vercel.app))
 - **[AI-Orb](https://github.com/weeeha/AI-Orb)** - audio-reactive orb for AI voice interfaces: the visual presence of an agent that is idle, listening, thinking or speaking. One WebGL fragment program, five finishes, zero runtime dependencies, with a written style guide for the orb as a design language
 - **[lifeos-specs](https://github.com/weeeha/lifeos-specs)** - specs for LifeOS, a personal operating system: declarative flows with a completion gate, one sanctioned write path for state, and a local vector index plus knowledge graph as memory. Native iOS client on top, engine local-first with no metered API for the heavy lifting
-- **[VisionClaw](https://github.com/weeeha/VisionClaw)** - real-time AI assistant for Meta Ray-Ban smart glasses: voice + vision, Gemini Live
 - **[MyMuseumGuide](https://github.com/weeeha/MyMuseumGuide)** - point a phone at an artifact and get it identified, narrated, and read aloud. Vision to streamed narrative to speech, with per-museum theming and a guided tour flow
 
 #### Film
