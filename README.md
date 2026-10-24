@@ -15,7 +15,7 @@
 One idea across four systems: a rule that matters is a check that runs, and an agent working in the repo hits the same checks a person does.
 
 - **The production library above** - 123 contracted components, 6 themes × 2 finishes × light and dark, 7 CI workflows.
-- **[Super-AI-Components](https://github.com/VV-DSGN-INC/Super-AI-Components)** - open-source shadcn registry for AI applications. 137 items installable by URL, MIT licensed ([site](https://super-ai-components.vercel.app)).
+- **[Super-AI-Components](https://github.com/VV-DSGN-INC/Super-AI-Components)** - open-source shadcn registry for AI applications. 134 items for AI apps plus 15 landing-page components, each installable by URL, MIT licensed ([site](https://super-ai-components.vercel.app)).
 - **ds-harness** - the production library's conventions with the brand removed: 75 components and the full gate set, so the rules can seed the next system.
 - **ds-architecture** - governance as a conformance ladder. Ten stages, three built, each claim paired with a probe that runs against a target repo, so a rule and its detector cannot drift apart. My personal 99-component library adopted the token stage first, which asks that every token be read somewhere or deleted: 337 tokens became 327.
 
@@ -38,6 +38,7 @@ Designing for screens that aren't a laptop, and keeping a fleet of them running.
 - **[tailtop](https://github.com/weeeha/tailtop)** - *htop for your tailnet.* A terminal UI that reads the `tailscaled` daemon already running on your machine. Installs nothing, needs no root
 - **fleetview** (private) - the visual companion to tailtop: a health view for the eight single-board computers running clocks, e-ink dashboards and a plant monitor around the apartment. It separates a board that is reachable from one that is actually doing its job, because three sat offline for 15 to 98 days before anyone noticed
 - **[3D-Printing](https://github.com/weeeha/3D-Printing)** - parametric enclosures for SuperClock and other hardware, printed on a Bambu Lab P1S. FreeCAD and OpenSCAD for parts that have to fit, Blender for sculpture
+- **[film-props](https://github.com/weeeha/film-props)** - 3D-printed film props and 1:50 pre-vis sets as parametric CadQuery scripts: a glowing battery with an LED tray, a generic pistol that copies no real make, a peg-grid restaurant set for blocking a scene. Each ships a print plate and a recipe for the P1S (private, exploration)
 
 ### Exploration and pet projects
 
