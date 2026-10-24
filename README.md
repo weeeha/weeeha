@@ -38,6 +38,7 @@ Designing for screens that aren't a laptop, and keeping a fleet of them running.
 - **[tailtop](https://github.com/weeeha/tailtop)** - *htop for your tailnet.* A terminal UI that reads the `tailscaled` daemon already running on your machine. Installs nothing, needs no root
 - **fleetview** (private) - the visual companion to tailtop: a health view for the eight single-board computers running clocks, e-ink dashboards and a plant monitor around the apartment. It separates a board that is reachable from one that is actually doing its job, because three sat offline for 15 to 98 days before anyone noticed
 - **[3D-Printing](https://github.com/weeeha/3D-Printing)** - parametric enclosures for SuperClock and other hardware, printed on a Bambu Lab P1S. FreeCAD and OpenSCAD for parts that have to fit, Blender for sculpture
+- **[film-props](https://github.com/weeeha/film-props)** - 3D-printed film props and 1:50 pre-vis sets as parametric CadQuery scripts: a glowing battery with an LED tray, a generic pistol that copies no real make, a peg-grid restaurant set for blocking a scene. Each ships a print plate and a recipe for the P1S (private, exploration)
 
 ### Exploration and pet projects
 
