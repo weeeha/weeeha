@@ -10,6 +10,32 @@
 - **[Ten8](https://ten8.ai)** - Founding Designer. AI coworker orchestration for logistics. Shipped the production design system: 112 components across 17 surfaces on a 271-token semantic system ([Storybook](https://ten8-component-library.vercel.app)), with Storybook running as an MCP server so AI tooling generates on-system.
 - **[PermitNav](https://permitnav.ca)** - Senior Product Designer (AI & design systems). AI building-permit copilot for Metro Vancouver. Design specs, prototypes and production UI, all shipped through an agentic Claude Code workflow against the product repos.
 
+### Tools for AI filmmaking
+
+The same idea as the design systems below, applied to film: a film's look, characters and shots each live in one place, so hundreds of generations stay consistent. The tools hand off to each other in the order a film gets made.
+
+**1. Develop the story**
+
+- **[Film-TV-Vocabulary](https://github.com/weeeha/Film-TV-Vocabulary)** - a connected vocabulary of film and TV craft across 22 areas. Every term has a definition, a practical use and an example, and entries combine into a creative brief ([live](https://film-tv-atlas.vercel.app))
+- **[FilmMaker](https://github.com/weeeha/FilmMaker)** - paste a screenplay, get scenes and shots, and a generated reference image per shot, with style notes that propagate across the board. The storyboard loop is built; the wider studio (flow builder, music and voice libraries, cost visible per step) is specced
+
+**2. Hold the film's world steady**
+
+- **[Film-Design-System](https://github.com/weeeha/Film-Design-System)** - a local-first app that manages a film's visual world the way a design system manages a product UI. Characters, props and settings each own a canon of reference images; good outputs get promoted back into it, so a character looks like the same character across hundreds of generations
+- **[Look-Tokens](https://github.com/weeeha/Look-Tokens)** - a film's look lives in one table of tokens. Shots reference tokens, a per-tool adapter composes each prompt at render time, and editing one value offers to re-render every shot that uses it
+- **[idea-to-prop](https://github.com/weeeha/idea-to-prop)** - one stable ID per prop, with a visual master, a reference pack, a VFX derivative and a print derivative that each keep their own version, so a change made for printing never overwrites the master
+
+**3. Plan the shots**
+
+- **[scene-builder-3d](https://github.com/weeeha/scene-builder-3d)** - shot-first 3D previs in the browser. A scene page and a shot page share one live 3D canvas, and a shot strip moves between shots in one click
+- **[film-previz](https://github.com/weeeha/film-previz)** - generate a set once in World Labs Marble and walk it in the browser with a camera that follows real focal length and sensor math. Each saved shot exports as a frame grab plus its camera data
+- **[location-lab](https://github.com/weeeha/location-lab)** - scout a real place as a Gaussian splat, with a clean-angle map showing where the capture is sharp, then export a reference pack for Seedance 2.0
+
+**4. Generate**
+
+- **[Video-Generation-Pipeline](https://github.com/weeeha/Video-Generation-Pipeline)** - Seedance 2.5 client with reference packs that hold a person, a place or a motion steady across separate generations, plus the prompt and API knowledge that makes a first attempt land. Grown out of a brand-film pipeline that shipped
+- **[Flow-Builder](https://github.com/weeeha/Flow-Builder)** - a node canvas for AI media pipelines. Handles are typed (text, image, video, audio) and connect only to a matching type, so image, video and speech generation chain without mismatches ([live](https://flow-builder-navy.vercel.app))
+
 ### Design systems that enforce their own rules
 
 One idea across four systems: a rule that matters is a check that runs, and an agent working in the repo hits the same checks a person does.
@@ -61,12 +87,6 @@ Designing for AI-native surfaces by building them.
 - **[AI-Orb](https://github.com/weeeha/AI-Orb)** - audio-reactive orb for AI voice interfaces: the visual presence of an agent that is idle, listening, thinking or speaking. One WebGL fragment program, five finishes, zero runtime dependencies, with a written style guide for the orb as a design language
 - **[lifeos-specs](https://github.com/weeeha/lifeos-specs)** - specs for LifeOS, a personal operating system: declarative flows with a completion gate, one sanctioned write path for state, and a local vector index plus knowledge graph as memory. Native iOS client on top, engine local-first with no metered API for the heavy lifting
 - **[MyMuseumGuide](https://github.com/weeeha/MyMuseumGuide)** - point a phone at an artifact and get it identified, narrated, and read aloud. Vision to streamed narrative to speech, with per-museum theming and a guided tour flow
-
-#### Film
-
-- **[FilmMaker](https://github.com/weeeha/FilmMaker)** - paste a screenplay, get scenes and shots, and a generated reference image per shot, with style notes that propagate across the board. The storyboard loop is built; the wider studio (flow builder, music and voice libraries, cost visible per step) is specced
-- **[Film Design System](https://github.com/weeeha/Film-Design-System)** - a local-first app that manages a film's visual world the way a design system manages a product UI. Characters, props and settings each own a canon of reference images; good outputs get promoted back into it, so a character looks like the same character across hundreds of generations
-- **[Video-Generation-Pipeline](https://github.com/weeeha/Video-Generation-Pipeline)** - Seedance 2.5 client with reference packs that hold a person, a place or a motion steady across separate generations, plus the prompt and API knowledge that makes a first attempt land. Grown out of a brand-film pipeline that shipped
 
 ---
 
