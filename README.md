@@ -4,6 +4,17 @@
 
 [vyhouski.com](https://vyhouski.com) · [LinkedIn](https://linkedin.com/in/nick-vyhouski) · mvyhouski@gmail.com · Montreal 🇨🇦
 
+### Start here
+
+Small builds, each around one idea. Build days are counted from commit history.
+
+- **[take-room](https://github.com/weeeha/take-room)** - play four AI music takes of one prompt in lockstep, so switching between them keeps the groove. 1 build day ([live](https://take-room.vercel.app))
+- **[vr180-depth](https://github.com/weeeha/vr180-depth)** - per-frame depth maps from VR180 stereo footage. An AI pass adds detail, and where it disagrees with the stereo measurement, stereo wins. 1 build day
+- **[AI-Orb](https://github.com/weeeha/AI-Orb)** - the user's voice drives the orb's boundary and the agent's voice drives its body, so you can see who holds the turn. 7 build days
+- **[Film-Design-System](https://github.com/weeeha/Film-Design-System)** - a film's characters, props and settings managed like a design system, so a character looks the same across hundreds of generations. 7 build days
+- **[MyCityVisualization](https://github.com/weeeha/MyCityVisualization)** - Montréal air quality on a 3D map where each data layer is one registry entry. 6 build days ([live](https://mycity-pied.vercel.app))
+- **[SuperClock](https://github.com/weeeha/SuperClock)** - a design system for a round 1080×1080 display, running on four Raspberry Pis. 46 build days
+
 **Now:**
 
 - **[Pegbo](https://pegbo.com)** - Design system and product UI for a pre-construction CRM. 123 components on a three-tier token architecture (shadcn/Radix/Base UI primitives, Pegbo composites, a 23-component AI tier), the prototyping repo the team explores screen directions in, and a bid-coverage workspace that shows package risk on the 3D building model, so a package short of bidders lights up where it sits.
