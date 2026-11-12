@@ -7,7 +7,7 @@
 **Now**
 
 - **[Pegbo](https://pegbo.com)** - Design system and product UI for a pre-construction CRM: 123 components on a three-tier token architecture, a prototyping repo for screen directions, and a bid-coverage workspace that shows package risk on the 3D building model.
-- **[Ten8](https://ten8.ai)** - Founding Designer. AI coworker orchestration for logistics. Shipped a 112-component design system on 271 semantic tokens ([Storybook](https://ten8-component-library.vercel.app)), with Storybook running as an MCP server so AI tooling generates on-system.
+- **[Ten8](https://ten8.ai)** - Founding Designer. AI coworker orchestration for logistics. Shipped a 112-component design system on 271 semantic tokens, with Storybook running as an MCP server so AI tooling generates on-system.
 - **[PermitNav](https://permitnav.ca)** - Senior Product Designer (AI & design systems). AI building-permit copilot for Metro Vancouver, shipped through an agentic Claude Code workflow.
 
 ## Design systems that enforce their own rules
