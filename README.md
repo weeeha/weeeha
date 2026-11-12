@@ -4,89 +4,50 @@
 
 [vyhouski.com](https://vyhouski.com) · [LinkedIn](https://linkedin.com/in/nick-vyhouski) · mvyhouski@gmail.com · Montreal 🇨🇦
 
-**Now:**
+**Now**
 
-- **[Pegbo](https://pegbo.com)** - Design system and product UI for a pre-construction CRM. 123 components on a three-tier token architecture (shadcn/Radix/Base UI primitives, Pegbo composites, a 23-component AI tier), the prototyping repo the team explores screen directions in, and a bid-coverage workspace that shows package risk on the 3D building model, so a package short of bidders lights up where it sits.
-- **[Ten8](https://ten8.ai)** - Founding Designer. AI coworker orchestration for logistics. Shipped the production design system: 112 components across 17 surfaces on a 271-token semantic system ([Storybook](https://ten8-component-library.vercel.app)), with Storybook running as an MCP server so AI tooling generates on-system.
-- **[PermitNav](https://permitnav.ca)** - Senior Product Designer (AI & design systems). AI building-permit copilot for Metro Vancouver. Design specs, prototypes and production UI, all shipped through an agentic Claude Code workflow against the product repos.
+- **[Pegbo](https://pegbo.com)** - Design system and product UI for a pre-construction CRM: 123 components on a three-tier token architecture, a prototyping repo for screen directions, and a bid-coverage workspace that shows package risk on the 3D building model.
+- **[Ten8](https://ten8.ai)** - Founding Designer. AI coworker orchestration for logistics. Shipped a 112-component design system on 271 semantic tokens ([Storybook](https://ten8-component-library.vercel.app)), with Storybook running as an MCP server so AI tooling generates on-system.
+- **[PermitNav](https://permitnav.ca)** - Senior Product Designer (AI & design systems). AI building-permit copilot for Metro Vancouver, shipped through an agentic Claude Code workflow.
 
-### Tools for AI filmmaking
+## Design systems that enforce their own rules
 
-The same idea as the design systems below, applied to film: a film's look, characters and shots each live in one place, so hundreds of generations stay consistent. The tools hand off to each other in the order a film gets made.
+A rule that matters is a check that runs, and an agent in the repo hits the same checks a person does. Contrast is a unit test (build fails below 4.5:1, per theme, light and dark). Every component ships a machine-readable contract. Review is a CI stage. The production library, ds-harness and ds-architecture are private; happy to walk through any of it.
 
-**1. Develop the story**
+- **[Super-AI-Components](https://github.com/VV-DSGN-INC/Super-AI-Components)** - open-source shadcn registry for AI apps. 134 items plus 15 landing-page components, MIT ([site](https://super-ai-components.vercel.app)).
+- **[Super-Design-Skills](https://github.com/weeeha/Super-Design-Skills)** and **[Super-Design-Lead](https://github.com/weeeha/Super-Design-Lead)** - Claude Code plugins for designers and design managers.
 
-- **[Film-TV-Vocabulary](https://github.com/weeeha/Film-TV-Vocabulary)** - a connected vocabulary of film and TV craft across 22 areas. Every term has a definition, a practical use and an example, and entries combine into a creative brief ([live](https://film-tv-atlas.vercel.app))
-- **[FilmMaker](https://github.com/weeeha/FilmMaker)** - paste a screenplay, get scenes and shots, and a generated reference image per shot, with style notes that propagate across the board. The storyboard loop is built; the wider studio (flow builder, music and voice libraries, cost visible per step) is specced
+## Tools for AI filmmaking
 
-**2. Hold the film's world steady**
+A film's look, characters and shots each live in one place, so hundreds of generations stay consistent.
 
-- **[Film-Design-System](https://github.com/weeeha/Film-Design-System)** - a local-first app that manages a film's visual world the way a design system manages a product UI. Characters, props and settings each own a canon of reference images; good outputs get promoted back into it, so a character looks like the same character across hundreds of generations
-- **[Look-Tokens](https://github.com/weeeha/Look-Tokens)** - a film's look lives in one table of tokens. Shots reference tokens, a per-tool adapter composes each prompt at render time, and editing one value offers to re-render every shot that uses it
-- **[idea-to-prop](https://github.com/weeeha/idea-to-prop)** - one stable ID per prop, with a visual master, a reference pack, a VFX derivative and a print derivative that each keep their own version, so a change made for printing never overwrites the master
+- **[Film-TV-Vocabulary](https://github.com/weeeha/Film-TV-Vocabulary)** - connected vocabulary of film and TV craft ([live](https://film-tv-atlas.vercel.app))
+- **[FilmMaker](https://github.com/weeeha/FilmMaker)** - screenplay in, scenes, shots and a reference image per shot out
+- **[Film-Design-System](https://github.com/weeeha/Film-Design-System)** - characters, props and settings each own a canon of reference images
+- **[Look-Tokens](https://github.com/weeeha/Look-Tokens)** - a film's look as one table of tokens, re-rendered on edit
+- **[idea-to-prop](https://github.com/weeeha/idea-to-prop)** - one ID per prop, with master, VFX and print versions kept apart
+- **[scene-builder-3d](https://github.com/weeeha/scene-builder-3d)** and **[film-previz](https://github.com/weeeha/film-previz)** - browser previs, the second with real focal-length and sensor math
+- **[location-lab](https://github.com/weeeha/location-lab)** - scout a real place as a Gaussian splat, export a reference pack
+- **[Video-Generation-Pipeline](https://github.com/weeeha/Video-Generation-Pipeline)** - Seedance client with reference packs for consistent people, places and motion
+- **[Flow-Builder](https://github.com/weeeha/Flow-Builder)** - typed node canvas for AI media pipelines ([live](https://flow-builder-navy.vercel.app))
+- **[video-notes](https://github.com/weeeha/video-notes)** - narrated screen recording to timestamped punch list with stills; Whisper and ffmpeg run locally
+- **[krita-stencils](https://github.com/weeeha/krita-stencils)** - draw-over practice stencils for Krita, generated locally
 
-**3. Plan the shots**
+## Hardware and connected devices
 
-- **[scene-builder-3d](https://github.com/weeeha/scene-builder-3d)** - shot-first 3D previs in the browser. A scene page and a shot page share one live 3D canvas, and a shot strip moves between shots in one click
-- **[film-previz](https://github.com/weeeha/film-previz)** - generate a set once in World Labs Marble and walk it in the browser with a camera that follows real focal length and sensor math. Each saved shot exports as a frame grab plus its camera data
-- **[location-lab](https://github.com/weeeha/location-lab)** - scout a real place as a Gaussian splat, with a clean-angle map showing where the capture is sharp, then export a reference pack for Seedance 2.0
+- **[SuperClock](https://github.com/weeeha/SuperClock)** - design system for a circular 1080×1080 display: 14 mini-apps on a four-device Raspberry Pi fleet over Tailscale
+- **[tailtop](https://github.com/weeeha/tailtop)** - *htop for your tailnet.* Terminal UI, installs nothing, needs no root
+- **[robots](https://github.com/weeeha/robots)** - a city sensor rover concept, PiDog Buddy, and **[robot-planter](https://github.com/weeeha/robot-planter)**, a plant pot on wheels that finds the sun
+- **[3D-Printing](https://github.com/weeeha/3D-Printing)** - parametric enclosures printed on a Bambu Lab P1S
 
-**4. Generate**
+## Data, agents and other experiments
 
-- **[Video-Generation-Pipeline](https://github.com/weeeha/Video-Generation-Pipeline)** - Seedance 2.5 client with reference packs that hold a person, a place or a motion steady across separate generations, plus the prompt and API knowledge that makes a first attempt land. Grown out of a brand-film pipeline that shipped
-- **[Flow-Builder](https://github.com/weeeha/Flow-Builder)** - a node canvas for AI media pipelines. Handles are typed (text, image, video, audio) and connect only to a matching type, so image, video and speech generation chain without mismatches ([live](https://flow-builder-navy.vercel.app))
-
-### Design systems that enforce their own rules
-
-One idea across four systems: a rule that matters is a check that runs, and an agent working in the repo hits the same checks a person does.
-
-- **The production library above** - 123 contracted components, 6 themes × 2 finishes × light and dark, 7 CI workflows.
-- **[Super-AI-Components](https://github.com/VV-DSGN-INC/Super-AI-Components)** - open-source shadcn registry for AI applications. 134 items for AI apps plus 15 landing-page components, each installable by URL, MIT licensed ([site](https://super-ai-components.vercel.app)).
-- **ds-harness** - the production library's conventions with the brand removed: 75 components and the full gate set, so the rules can seed the next system.
-- **ds-architecture** - governance as a conformance ladder. Ten stages, three built, each claim paired with a probe that runs against a target repo, so a rule and its detector cannot drift apart. My personal 99-component library adopted the token stage first, which asks that every token be read somewhere or deleted: 337 tokens became 327.
-
-What runs in them:
-
-- **Contrast is a unit test.** Every status foreground is measured against the fill it actually sits on, per theme, in light and dark, and the build fails below 4.5:1. The worst pair in the system was a dark-mode value a light-only check never sees.
-- **Every component ships a machine-readable contract.** When to use it, what to reach for instead, its keyboard behaviour, with one index routing over all 123. Give an agent that and it picks the right component instead of inventing props. The same contracts now also emit a catalog for generative UI.
-- **Rules state their own coverage.** 50 spec rules, and a coverage file that marks which have checks and which 22 stay judgment calls, so "covered" always has a denominator.
-- **Review is a CI stage.** An AI reviewer reads every PR with a test-change report and two blocker classes. An intake agent turns new issues into plan comments before work starts.
-- **Gates on the ordinary things.** Axe on every story, spacing, radius and type scales, keyboard stops on disabled controls, layout checks at 1024 and 1280, and a weekly WebKit run for Safari. A post-edit hook hands an agent the token violations on the lines it just changed.
-- **Prototypes get a fast lane.** A sandbox outside the gates for trying screen directions, and a promote step that runs a prototype through every gate before it graduates.
-
-Also in the set: a governed corpus of iOS competitive audits that fails its own build when a claim drifts from the screenshot it cites, and a runnable app shell where how you browse and how records open are two independent, persisted choices. The production library, ds-harness and ds-architecture are private repos, happy to walk through any of it.
-
-### Connected devices
-
-Designing for screens that aren't a laptop, and keeping a fleet of them running.
-
-- **[SuperClock](https://github.com/weeeha/SuperClock)** - a design system for a display that isn't a rectangle. 14 mini-apps on a 1080×1080 circular LCD, running as a four-device Raspberry Pi fleet over Tailscale, with an in-repo docs site and a written platform spec so new apps land on-system. This summer: a calendar built as a four-level zoom ladder (cover, week, month, year) with swipe navigation, and a radar sidecar so the display responds to presence
-- **[tailtop](https://github.com/weeeha/tailtop)** - *htop for your tailnet.* A terminal UI that reads the `tailscaled` daemon already running on your machine. Installs nothing, needs no root
-- **fleetview** (private) - the visual companion to tailtop: a health view for the eight single-board computers running clocks, e-ink dashboards and a plant monitor around the apartment. It separates a board that is reachable from one that is actually doing its job, because three sat offline for 15 to 98 days before anyone noticed
-- **[3D-Printing](https://github.com/weeeha/3D-Printing)** - parametric enclosures for SuperClock and other hardware, printed on a Bambu Lab P1S. FreeCAD and OpenSCAD for parts that have to fit, Blender for sculpture
-- **[film-props](https://github.com/weeeha/film-props)** - 3D-printed film props and 1:50 pre-vis sets as parametric CadQuery scripts: a glowing battery with an LED tray, a generic pistol that copies no real make, a peg-grid restaurant set for blocking a scene. Each ships a print plate and a recipe for the P1S (private, exploration)
-
-### Exploration and pet projects
-
-#### AI-enabled design workflows
-
-Tools that change how design teams work, not just what they ship.
-
-- **[Super-Design-Skills](https://github.com/weeeha/Super-Design-Skills)** - designer skills for Claude Code: brainstorming, critique, design QA, spec writing, handoff
-- **[Super-Design-Lead](https://github.com/weeeha/Super-Design-Lead)** - design-leadership methodology plugin for design managers
-- A personal plugin of 28 workflow skills that runs the rest of the practice: company research, application drafting, interview debriefs, ship-and-deploy, fleet deploys, and a model-fit check that keeps the expensive model on the work that needs it
-- Design-adjacent automations built around a real token migration: two-way Figma-variables ↔ code-tokens sync, token-table generation, automated rebinding of Figma node trees between token systems
-- Run a ~15-designer community with biweekly sessions on AI tooling and best practices
-
-#### Agent-driven experiences
-
-Designing for AI-native surfaces by building them.
-
-- **[AgentCommandHQ](https://github.com/weeeha/AgentCommandHQ)** - command dashboard for an AI agent squad: Kanban, multi-thread chat, observability ([demo](https://agent-command-hq.vercel.app))
-- **[agent-rpg](https://github.com/weeeha/agent-rpg)** - the same agent-squad problem, explored as a cyberpunk command HQ ([demo](https://agent-rpg.vercel.app))
-- **[AI-Orb](https://github.com/weeeha/AI-Orb)** - audio-reactive orb for AI voice interfaces: the visual presence of an agent that is idle, listening, thinking or speaking. One WebGL fragment program, five finishes, zero runtime dependencies, with a written style guide for the orb as a design language
-- **[lifeos-specs](https://github.com/weeeha/lifeos-specs)** - specs for LifeOS, a personal operating system: declarative flows with a completion gate, one sanctioned write path for state, and a local vector index plus knowledge graph as memory. Native iOS client on top, engine local-first with no metered API for the heavy lifting
-- **[MyMuseumGuide](https://github.com/weeeha/MyMuseumGuide)** - point a phone at an artifact and get it identified, narrated, and read aloud. Vision to streamed narrative to speech, with per-museum theming and a guided tour flow
+- **[Visualizing-Crowds](https://github.com/weeeha/Visualizing-Crowds)** - see what 50 to 50 million people look like standing in a real place
+- **[Jobsmith](https://github.com/weeeha/Jobsmith)** - one self-hostable app for a whole job search, from find to debrief (AGPL-3.0)
+- **[concept-lab](https://github.com/weeeha/concept-lab)** - idea in, labeled concept piece out
+- **[AI-Orb](https://github.com/weeeha/AI-Orb)** - audio-reactive orb for AI voice interfaces, one WebGL shader, zero dependencies
+- **[AgentCommandHQ](https://github.com/weeeha/AgentCommandHQ)** ([demo](https://agent-command-hq.vercel.app)) and **[agent-rpg](https://github.com/weeeha/agent-rpg)** ([demo](https://agent-rpg.vercel.app)) - two takes on a command HQ for an agent squad
+- **[lifeos-specs](https://github.com/weeeha/lifeos-specs)** and **[MyMuseumGuide](https://github.com/weeeha/MyMuseumGuide)** - a personal OS spec, and a phone-camera museum guide
 
 ---
 
